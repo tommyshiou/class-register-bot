@@ -1,0 +1,829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" name="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" name="Cache-Control" content="no-cache">
+<link rel="stylesheet" href="MATH415_files/UI_web_defaultapp.css" type="text/css">
+<link rel="stylesheet" href="MATH415_files/web_defaultprint.css" type="text/css" media="print">
+<title>Look-up or Select Classes Results; Look-up or Select Classes; Registration; Registration and Records Tab</title>
+<meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript">
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</script>
+</head>
+<body>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a href="#main_content" onmouseover="window.status='Go to Main Content'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Go to Main Content'; return true" onblur="window.status=''; return true" class="skiplinks">Go to Main Content</a>
+<h1>University of Illinois</h1></div><div class="headerlinksdiv">
+<span class="pageheaderlinks2">
+<map name="Module_Navigation_Links_H" title="Module Navigation Links">
+<p>
+<a href="#skip_Module_Navigation_Links_H" onmouseover="window.status='Skip Module Navigation Links'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Skip Module Navigation Links'; return true" onblur="window.status=''; return true" class="skiplinks">Skip Module Navigation Links</a>
+<table class="plaintable" summary="This is main table for displaying Tab Items." border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td class="pldefault">
+<table class="plaintable" summary="This table displays Tab Items." border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="taboff" height="22">
+<a href="https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu" onmouseover="window.status='New Personal Information'; return true" onmouseout="window.status=''; return true" onfocus="window.status='New Personal Information'; return true" onblur="window.status=''; return true">Personal Information</a>
+</td>
+<td class="bgtaboff" align="right" height="22" valign="top">
+<img src="MATH415_files/web_tab_corner_right.gif" class="headerImg" title="" name="web_tab_corner_right" border="0" height="20" hspace="0" vspace="0" width="8">
+</td>
+<td class="taboff" height="22">
+<a href="https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu" onmouseover="window.status='Financial Aid '; return true" onmouseout="window.status=''; return true" onfocus="window.status='Financial Aid '; return true" onblur="window.status=''; return true">Financial Aid </a>
+</td>
+<td class="bgtaboff" align="right" height="22" valign="top">
+<img src="MATH415_files/web_tab_corner_right.gif" class="headerImg" title="" name="web_tab_corner_right" border="0" height="20" hspace="0" vspace="0" width="8">
+</td>
+<td class="tabon" height="22">
+<a href="https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" onmouseover="window.status='Registration &amp; Records'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Registration &amp; Records'; return true" onblur="window.status=''; return true">Registration &amp; Records</a>
+</td>
+<td class="bgtabon" align="right" height="22" valign="top">
+<img src="MATH415_files/web_tab_corner_right.gif" class="headerImg" title="" name="web_tab_corner_right" border="0" height="20" hspace="0" vspace="0" width="8">
+</td>
+<td class="taboff" height="22">
+<a href="https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_StuAcct_BillInfo" onmouseover="window.status='Account Billing Information'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Account Billing Information'; return true" onblur="window.status=''; return true">Account Billing Information</a>
+</td>
+<td class="bgtaboff" align="right" height="22" valign="top">
+<img src="MATH415_files/web_tab_corner_right.gif" class="headerImg" title="" name="web_tab_corner_right" border="0" height="20" hspace="0" vspace="0" width="8">
+</td>
+<td class="taboff" height="22">
+<a href="https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_GradMainMnu" onmouseover="window.status='Graduation'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Graduation'; return true" onblur="window.status=''; return true">Graduation</a>
+</td>
+<td class="bgtaboff" align="right" height="22" valign="top">
+<img src="MATH415_files/web_tab_corner_right.gif" class="headerImg" title="" name="web_tab_corner_right" border="0" height="20" hspace="0" vspace="0" width="8">
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td class="bgtabon" colspan="2" width="100%"><img src="MATH415_files/web_transparent.gif" class="headerImg" title="" name="web_transparent" border="0" height="3" hspace="0" vspace="0" width="10"></td></tr></tbody></table>
+
+
+<a name="skip_Module_Navigation_Links_H"></a>
+</p></map></span></div>
+<table class="plaintable" summary="This table displays Menu Items and Banner Search textbox." width="100%">
+<tbody><tr>
+<td class="pldefault">
+<div class="headerlinksdiv2">
+<form action="/BANPROD1/twbksrch.P_ShowResults" method="POST">
+Search
+<span class="fieldlabeltextinvisible"><label for="keyword_in_id"><span class="fieldlabeltext">Search</span></label></span>
+<input name="KEYWRD_IN" size="20" maxlength="65" id="keyword_in_id" type="text">
+<input value="Go" type="submit">
+</form>
+</div>
+</td>
+<td class="pldefault"><p class="rightaligntext">
+<span class="pageheaderlinks">
+<a href="https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu" class="submenulinktext2" id="ssbbackurl">RETURN TO MENU</a>
+|
+<a href="https://ui2web1.apps.uillinois.edu/BANPROD1/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</a>
+|
+<a href="https://ui2web1.apps.uillinois.edu/UI_help/P_GetCrse.html" accesskey="H" onclick="popup = window.open('/UI_help/P_GetCrse.html', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onmouseover="window.status='';  return true" onmouseout="window.status=''; return true" onfocus="window.status='';  return true" onblur="window.status=''; return true" class="submenulinktext2">HELP</a>
+|
+<a href="https://ui2web1.apps.uillinois.edu/BANPROD1/twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</a>
+</span>
+</p></td>
+</tr>
+</tbody></table>
+</div>
+<div class="pagetitlediv">
+<table class="plaintable" summary="This table displays title and static header displays." width="100%">
+<tbody><tr>
+<td class="pldefault">
+<h2>Look-Up or Select Classes Results</h2>
+</td>
+<td class="pldefault">
+&nbsp;
+</td>
+<td class="pldefault"><p class="rightaligntext">
+</p><div class="staticheaders">
+672131078 Thomas D. Shiou<br>
+Spring 2012 - Urbana-Champaign<br>
+Dec 23, 2011 10:05 pm<br>
+</div>
+</td>
+</tr>
+<tr>
+<td class="bg3" colspan="3" width="100%"><img src="MATH415_files/web_transparent.gif" class="headerImg" title="" name="web_transparent" border="0" height="3" hspace="0" vspace="0" width="10"></td>
+</tr>
+</tbody></table>
+<a name="main_content"></a>
+</div>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<form action="/BANPROD1/bwckcoms.P_AddFromSearch1" method="POST" onsubmit="return checkSubmit()">
+
+<br>
+<input name="assoc_term_in" value="dummy" type="hidden">
+<input name="crn" value="dummy" type="hidden">
+<input name="start_date_in" value="dummy" type="hidden">
+<input name="end_date_in" value="dummy" type="hidden">
+<input name="rsts" value="dummy" type="hidden">
+<input name="subj" value="dummy" type="hidden">
+<input name="crse" value="dummy" type="hidden">
+<input name="sec" value="dummy" type="hidden">
+<input name="levl" value="dummy" type="hidden">
+<input name="gmod" value="dummy" type="hidden">
+<input name="cred" value="dummy" type="hidden">
+<input name="title" value="dummy" type="hidden">
+<input name="mesg" value="dummy" type="hidden">
+<input name="regs_row" value="8" type="hidden">
+<input name="wait_row" value="0" type="hidden">
+<input name="add_row" value="10" type="hidden">
+<input name="rsts" value="" type="hidden">
+<input name="assoc_term_in" value="120121" type="hidden">
+<input name="crn" value="32781" type="hidden">
+<input name="start_date_in" value="01/17/2012" type="hidden">
+<input name="end_date_in" value="05/02/2012" type="hidden">
+<input name="subj" value="ECE" type="hidden">
+<input name="crse" value="385" type="hidden">
+<input name="sec" value="ABO" type="hidden">
+<input name="levl" value="Undergrad - Urbana-Champaign" type="hidden">
+<input name="gmod" value="Standard Letter" type="hidden">
+<input name="cred" value="    0.000" type="hidden">
+<input name="title" value="Digital Systems Laboratory" type="hidden">
+<input name="mesg" value="DUMMY" type="hidden">
+<input name="rsts" value="" type="hidden">
+<input name="assoc_term_in" value="120121" type="hidden">
+<input name="crn" value="32782" type="hidden">
+<input name="start_date_in" value="01/17/2012" type="hidden">
+<input name="end_date_in" value="05/02/2012" type="hidden">
+<input name="subj" value="ECE" type="hidden">
+<input name="crse" value="385" type="hidden">
+<input name="sec" value="AL1" type="hidden">
+<input name="levl" value="Undergrad - Urbana-Champaign" type="hidden">
+<input name="gmod" value="Standard Letter" type="hidden">
+<input name="cred" value="    2.000" type="hidden">
+<input name="title" value="Digital Systems Laboratory" type="hidden">
+<input name="mesg" value="DUMMY" type="hidden">
+<input name="rsts" value="" type="hidden">
+<input name="assoc_term_in" value="120121" type="hidden">
+<input name="crn" value="33880" type="hidden">
+<input name="start_date_in" value="01/17/2012" type="hidden">
+<input name="end_date_in" value="05/02/2012" type="hidden">
+<input name="subj" value="ECE" type="hidden">
+<input name="crse" value="431" type="hidden">
+<input name="sec" value="AL1" type="hidden">
+<input name="levl" value="Undergrad - Urbana-Champaign" type="hidden">
+<input name="gmod" value="Standard Letter" type="hidden">
+<input name="cred" value="    4.000" type="hidden">
+<input name="title" value="Electric Machinery" type="hidden">
+<input name="mesg" value="DUMMY" type="hidden">
+<input name="rsts" value="" type="hidden">
+<input name="assoc_term_in" value="120121" type="hidden">
+<input name="crn" value="45210" type="hidden">
+<input name="start_date_in" value="01/17/2012" type="hidden">
+<input name="end_date_in" value="05/02/2012" type="hidden">
+<input name="subj" value="ECE" type="hidden">
+<input name="crse" value="391" type="hidden">
+<input name="sec" value="AL" type="hidden">
+<input name="levl" value="Undergrad - Urbana-Champaign" type="hidden">
+<input name="gmod" value="Standard Letter" type="hidden">
+<input name="cred" value="    4.000" type="hidden">
+<input name="title" value="Computer Systems Engineering" type="hidden">
+<input name="mesg" value="DUMMY" type="hidden">
+<input name="rsts" value="" type="hidden">
+<input name="assoc_term_in" value="120121" type="hidden">
+<input name="crn" value="45300" type="hidden">
+<input name="start_date_in" value="01/17/2012" type="hidden">
+<input name="end_date_in" value="05/02/2012" type="hidden">
+<input name="subj" value="ECE" type="hidden">
+<input name="crse" value="391" type="hidden">
+<input name="sec" value="AD1" type="hidden">
+<input name="levl" value="Undergrad - Urbana-Champaign" type="hidden">
+<input name="gmod" value="Standard Letter" type="hidden">
+<input name="cred" value="    0.000" type="hidden">
+<input name="title" value="Computer Systems Engineering" type="hidden">
+<input name="mesg" value="DUMMY" type="hidden">
+<input name="rsts" value="" type="hidden">
+<input name="assoc_term_in" value="120121" type="hidden">
+<input name="crn" value="48245" type="hidden">
+<input name="start_date_in" value="01/17/2012" type="hidden">
+<input name="end_date_in" value="05/02/2012" type="hidden">
+<input name="subj" value="ECE" type="hidden">
+<input name="crse" value="313" type="hidden">
+<input name="sec" value="D" type="hidden">
+<input name="levl" value="Undergrad - Urbana-Champaign" type="hidden">
+<input name="gmod" value="Standard Letter" type="hidden">
+<input name="cred" value="    3.000" type="hidden">
+<input name="title" value="Probability with Engrg Applic" type="hidden">
+<input name="mesg" value="DUMMY" type="hidden">
+<input name="rsts" value="" type="hidden">
+<input name="assoc_term_in" value="120121" type="hidden">
+<input name="crn" value="51021" type="hidden">
+<input name="start_date_in" value="01/17/2012" type="hidden">
+<input name="end_date_in" value="05/02/2012" type="hidden">
+<input name="subj" value="ECE" type="hidden">
+<input name="crse" value="431" type="hidden">
+<input name="sec" value="ABD" type="hidden">
+<input name="levl" value="Undergrad - Urbana-Champaign" type="hidden">
+<input name="gmod" value="Standard Letter" type="hidden">
+<input name="cred" value="    0.000" type="hidden">
+<input name="title" value="Electric Machinery" type="hidden">
+<input name="mesg" value="DUMMY" type="hidden">
+<input name="rsts" value="" type="hidden">
+<input name="assoc_term_in" value="120121" type="hidden">
+<input name="crn" value="56912" type="hidden">
+<input name="start_date_in" value="01/17/2012" type="hidden">
+<input name="end_date_in" value="05/02/2012" type="hidden">
+<input name="subj" value="ECE" type="hidden">
+<input name="crse" value="342" type="hidden">
+<input name="sec" value="C" type="hidden">
+<input name="levl" value="Undergrad - Urbana-Champaign" type="hidden">
+<input name="gmod" value="Standard Letter" type="hidden">
+<input name="cred" value="    3.000" type="hidden">
+<input name="title" value="Electronic Circuits" type="hidden">
+<input name="mesg" value="DUMMY" type="hidden">
+<input name="TERM_IN" value="120121" type="hidden">
+<input name="sel_crn" value="dummy" type="hidden">
+<input name="assoc_term_in" value="dummy" type="hidden">
+<input name="ADD_BTN" value="dummy" type="hidden">
+<table class="datadisplaytable" summary="This layout table is used to present the sections found" width="100%"><caption class="captiontext">Sections Found</caption>
+<tbody><tr>
+<th colspan="26" class="ddtitle" scope="colgroup">Mathematics</th>
+</tr>
+<tr>
+<th class="ddheader" scope="col">Select</th>
+<th class="ddheader" scope="col"><acronym title="Course Reference Number">CRN</acronym></th>
+<th class="ddheader" scope="col"><abbr title="Subject">Subj</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Course">Crse</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Section">Sec</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Campus">Cmp</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Credit Hours">Cred</abbr></th>
+<th class="ddheader" scope="col">Title</th>
+<th class="ddheader" scope="col">Days</th>
+<th class="ddheader" scope="col">Time</th>
+<th class="ddheader" scope="col"><abbr title="Section Capacity">Cap</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Section Actual">Act</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Section Remaining">Rem</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Waitlist Capacity">WL Cap</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Waitlist Actual">WL Act</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Waitlist Remaining">WL Rem</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Crosslist Capacity">XL Cap</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Crosslist Actual">XL Act</abbr></th>
+<th class="ddheader" scope="col"><abbr title="Crosslist Remaining">XL Rem</abbr></th>
+<th class="ddheader" scope="col">Instructor</th>
+<th class="ddheader" scope="col">Date (<abbr title="month month">MM</abbr>/<abbr title="day day">DD</abbr>)</th>
+<th class="ddheader" scope="col">Location</th>
+<th class="ddheader" scope="col">Attribute</th>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37957" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37957</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">A13</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">08:00 am-08:50 am</td>
+<td class="dddefault">70</td>
+<td class="dddefault">73</td>
+<td class="dddefault">-3</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">80</td>
+<td class="dddefault">73</td>
+<td class="dddefault">7</td>
+<td class="dddefault">Javid Validashti Dizgam (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37960" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37960</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">A14</td>
+<td class="dddefault">100</td>
+<td class="dddefault">4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">08:00 am-08:50 am</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">80</td>
+<td class="dddefault">73</td>
+<td class="dddefault">7</td>
+<td class="dddefault">Javid Validashti Dizgam (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=56172" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">56172</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">B13</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">09:00 am-09:50 am</td>
+<td class="dddefault">30</td>
+<td class="dddefault">37</td>
+<td class="dddefault">-7</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">36</td>
+<td class="dddefault">37</td>
+<td class="dddefault">-1</td>
+<td class="dddefault">Maarten J. Bergvelt (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 345</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=56173" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">56173</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">B14</td>
+<td class="dddefault">100</td>
+<td class="dddefault">4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">09:00 am-09:50 am</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">36</td>
+<td class="dddefault">37</td>
+<td class="dddefault">-1</td>
+<td class="dddefault">Maarten J. Bergvelt (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 345</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37967" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37967</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">C13</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">10:00 am-10:50 am</td>
+<td class="dddefault">70</td>
+<td class="dddefault">75</td>
+<td class="dddefault">-5</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">82</td>
+<td class="dddefault">75</td>
+<td class="dddefault">7</td>
+<td class="dddefault">Maarten J. Bergvelt (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37970" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37970</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">C14</td>
+<td class="dddefault">100</td>
+<td class="dddefault">4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">10:00 am-10:50 am</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">82</td>
+<td class="dddefault">75</td>
+<td class="dddefault">7</td>
+<td class="dddefault">Maarten J. Bergvelt (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault">
+<input name="sel_crn" value="40670 120121" id="action_id7" type="checkbox">
+<label for="action_id7"><span class="fieldlabeltextinvisible">add to worksheet</span></label>
+<input name="assoc_term_in" value="120121" type="hidden">
+</td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=40670" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">40670</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">EGR</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000/4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+<td class="dddefault">50</td>
+<td class="dddefault">1</td>
+<td class="dddefault">49</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">Bruce Carpenter (<abbr title="Primary">P</abbr>), Debra J. Woods </td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault"><abbr title="To Be Announced">TBA</abbr></td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37980" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37980</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">F13</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">02:00 pm-02:50 pm</td>
+<td class="dddefault">81</td>
+<td class="dddefault">84</td>
+<td class="dddefault">-3</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">93</td>
+<td class="dddefault">84</td>
+<td class="dddefault">9</td>
+<td class="dddefault">Robert G. Muncaster (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1GH 223</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37983" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37983</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">F14</td>
+<td class="dddefault">100</td>
+<td class="dddefault">4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">02:00 pm-02:50 pm</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">93</td>
+<td class="dddefault">84</td>
+<td class="dddefault">9</td>
+<td class="dddefault">Robert G. Muncaster (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1GH 223</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37984" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37984</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">G83</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">03:00 pm-03:50 pm</td>
+<td class="dddefault">60</td>
+<td class="dddefault">60</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">70</td>
+<td class="dddefault">60</td>
+<td class="dddefault">10</td>
+<td class="dddefault">Bruce Carpenter (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1HAB 156</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">F</td>
+<td class="dddefault">03:00 pm-03:50 pm</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">Bruce Carpenter (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 239</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37986" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37986</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">G84</td>
+<td class="dddefault">100</td>
+<td class="dddefault">4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">MWF</td>
+<td class="dddefault">03:00 pm-03:50 pm</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">70</td>
+<td class="dddefault">60</td>
+<td class="dddefault">10</td>
+<td class="dddefault">Bruce Carpenter (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1HAB 156</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">F</td>
+<td class="dddefault">03:00 pm-03:50 pm</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">&nbsp;</td>
+<td class="dddefault">Bruce Carpenter (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 239</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=53682" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">53682</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">M13</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">TR</td>
+<td class="dddefault">09:30 am-10:50 am</td>
+<td class="dddefault">70</td>
+<td class="dddefault">71</td>
+<td class="dddefault">-1</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">73</td>
+<td class="dddefault">71</td>
+<td class="dddefault">2</td>
+<td class="dddefault">Rinat Kedem (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=53683" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">53683</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">M14</td>
+<td class="dddefault">100</td>
+<td class="dddefault">4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">TR</td>
+<td class="dddefault">09:30 am-10:50 am</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">73</td>
+<td class="dddefault">71</td>
+<td class="dddefault">2</td>
+<td class="dddefault">Rinat Kedem (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37972" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37972</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">P13</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">TR</td>
+<td class="dddefault">11:00 am-12:20 pm</td>
+<td class="dddefault">70</td>
+<td class="dddefault">75</td>
+<td class="dddefault">-5</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">82</td>
+<td class="dddefault">75</td>
+<td class="dddefault">7</td>
+<td class="dddefault">Iwan M. Duursma (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37974" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37974</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">P14</td>
+<td class="dddefault">100</td>
+<td class="dddefault">4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">TR</td>
+<td class="dddefault">11:00 am-12:20 pm</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">82</td>
+<td class="dddefault">75</td>
+<td class="dddefault">7</td>
+<td class="dddefault">Iwan M. Duursma (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37976" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37976</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">Q13</td>
+<td class="dddefault">100</td>
+<td class="dddefault">3.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">TR</td>
+<td class="dddefault">12:30 pm-01:50 pm</td>
+<td class="dddefault">70</td>
+<td class="dddefault">73</td>
+<td class="dddefault">-3</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">82</td>
+<td class="dddefault">73</td>
+<td class="dddefault">9</td>
+<td class="dddefault">Iwan M. Duursma (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+<tr>
+<td class="dddefault"><abbr title="Closed">C</abbr></td>
+<td class="dddefault"><a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwckschd.p_disp_listcrse?term_in=120121&amp;subj_in=MATH&amp;crse_in=415&amp;crn_in=37979" onmouseover="window.status='Detail';  return true" onfocus="window.status='Detail';  return true" onmouseout="window.status='';  return true" onblur="window.status='';  return true">37979</a></td>
+<td class="dddefault">MATH</td>
+<td class="dddefault">415</td>
+<td class="dddefault">Q14</td>
+<td class="dddefault">100</td>
+<td class="dddefault">4.000</td>
+<td class="dddefault">Applied Linear Algebra</td>
+<td class="dddefault">TR</td>
+<td class="dddefault">12:30 pm-01:50 pm</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">0</td>
+<td class="dddefault">82</td>
+<td class="dddefault">73</td>
+<td class="dddefault">9</td>
+<td class="dddefault">Iwan M. Duursma (<abbr title="Primary">P</abbr>)</td>
+<td class="dddefault">01/17-05/02</td>
+<td class="dddefault">1AH 245</td>
+<td class="dddefault">&nbsp;</td>
+</tr>
+</tbody></table>
+<br>
+<input name="ADD_BTN" value="Register" type="submit">
+<input name="ADD_BTN" value="Add to WorkSheet" type="submit">
+<input name="ADD_BTN" value="New Search" type="submit">
+</form>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table class="plaintable" summary="This is table displays line separator at end of the page." border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="bgtabon" colspan="2" width="100%"><img src="MATH415_files/web_transparent.gif" class="headerImg" title="" name="web_transparent" border="0" height="3" hspace="0" vspace="0" width="10"></td></tr></tbody></table>
+<a href="#top" onmouseover="window.status='Skip to top of page'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Skip to top of page'; return true" onblur="window.status=''; return true" class="skiplinks">Skip to top of page</a>
+</div>
+<div class="footerbeforediv">
+
+</div>
+<div class="footerlinksdiv">
+<span class="pagefooterlinks">
+<map name="Look-up_or_Select_Classes_Results;_Look-up_or_Select_Classes;_Registration;_Registration_and_Records_Tab_Links_F" title="Look-up or Select Classes Results; Look-up or Select Classes; Registration; Registration and Records Tab Links">
+<p>
+<a href="#skip_Look-up_or_Select_Classes_Results;_Look-up_or_Select_Classes;_Registration;_Registration_and_Records_Tab_Links_F" onmouseover="window.status='Skip Look-up or Select Classes Results; Look-up or Select Classes; Registration; Registration and Records Tab Links'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Skip Look-up or Select Classes Results; Look-up or Select Classes; Registration; Registration and Records Tab Links'; return true" onblur="window.status=''; return true" class="skiplinks">Skip Look-up or Select Classes Results; Look-up or Select Classes; Registration; Registration and Records Tab Links</a>
+</p><p>[ <a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwskrsta.P_RegsStatusDisp" onmouseover="window.status='Registration Eligibility'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Registration Eligibility'; return true" onblur="window.status=''; return true">Registration Eligibility</a>
+ | <a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfshd.P_CrseSchd" onmouseover="window.status='Student Schedule - Week at a Glance'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Student Schedule - Week at a Glance'; return true" onblur="window.status=''; return true">Student Schedule - Week at a Glance</a>
+ | <a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwskfshd.P_CrseSchdDetl" onmouseover="window.status='Student Schedule - Detail'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Student Schedule - Detail'; return true" onblur="window.status=''; return true">Student Schedule - Detail</a>
+ | <a href="https://ui2web1.apps.uillinois.edu/BANPROD1/bwskffee.P_FeeAsses" onmouseover="window.status='Tuition &amp; Fee Assessment'; return true" onmouseout="window.status=''; return true" onfocus="window.status='Tuition &amp; Fee Assessment'; return true" onblur="window.status=''; return true">Tuition &amp; Fee Assessment</a>
+ ]
+
+
+<a name="skip_Look-up_or_Select_Classes_Results;_Look-up_or_Select_Classes;_Registration;_Registration_and_Records_Tab_Links_F"></a>
+</p></map></span></div>
+<div class="footerafterdiv">
+
+</div>
+<div class="globalafterdiv">
+
+</div>
+<div class="globalfooterdiv">
+
+</div>
+<div class="pagefooterdiv">
+<span class="releasetext">Release: 8.5.1.2</span>
+</div>
+<div class="poweredbydiv">
+</div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+
+
+</body></html>
